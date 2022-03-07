@@ -1,0 +1,9 @@
+
+[15-Jul-2021 14:19:13 UTC] PHP Warning:  Undefined array key "name" in /home/kinetic1/public_html/assets/mail/contact.php on line 10
+[15-Jul-2021 14:19:13 UTC] PHP Warning:  Undefined array key "email" in /home/kinetic1/public_html/assets/mail/contact.php on line 12
+[15-Jul-2021 14:19:13 UTC] PHP Warning:  Undefined array key "subject" in /home/kinetic1/public_html/assets/mail/contact.php on line 13
+[15-Jul-2021 14:19:13 UTC] PHP Warning:  Undefined array key "message" in /home/kinetic1/public_html/assets/mail/contact.php on line 14
+[15-Jul-2021 14:19:37 UTC] PHP Warning:  Undefined array key "email" in /home/kinetic1/public_html/assets/mail/contact.php on line 12
+[15-Jul-2021 14:19:37 UTC] PHP Warning:  Undefined array key "subject" in /home/kinetic1/public_html/assets/mail/contact.php on line 13
+[15-Jul-2021 14:19:37 UTC] PHP Warning:  Undefined array key "message" in /home/kinetic1/public_html/assets/mail/contact.php on line 14
+[15-Jul-2021 14:19:58 UTC] PHP Warning:  Undefined array key "message" in /home/kinetic1/public_html/assets/mail/contact.php on line 14
