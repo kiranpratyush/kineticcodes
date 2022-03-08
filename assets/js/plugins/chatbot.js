@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
 
     jQuery(document).on('click', '.sendButton', function (e) {
         let value = jQuery(this).parent().siblings('.finalInputField').val();
-        const mailString = encodeURI(`mailto:contact@kineticcodes.com?subject=Query Regarding Kinetic Codes&body=${value}`);
+        const mailString = encodeURI(`mailto:contact@kineticcodes.com?subject=Query Regarding Kinetic Codes&body=${value}\n\n\n\n\nTrace - \n${generateTrace()}`);
         window.open(mailString);
     });
 
@@ -41,8 +41,10 @@ jQuery(document).ready(function ($) {
     }
 
     function playNotificationSound() {
-        const audio = new Audio ("./assets/")
+        const audio = new Audio ("./assets/notification.mp3")
+        audio.play();
     }
+
     questions = {
         "1": {
             question_text: "Welcome to Kinetic Codes. Are you looking for ...?",
@@ -95,16 +97,16 @@ jQuery(document).ready(function ($) {
     responses = [];
 
     function generateTrace() {
-        trace = '<ol>';
-        for(let response of responses) {
-            trace.append(`<li>${response.question} - ${response.option}</li>`);
-        }
-        trace.append(``)
+        trace = '';
+        responses.forEach((response, index)=>  {
+            trace+=`${index+1}. ${response.question} - ${response.option}\n`;
+        });
         console.log(trace);
         return trace;
     }
 
     function optionSelectHandler(question_id, option_id) {
+        playNotificationSound();
         userMsg(questions[question_id].options[option_id].option_text);
         responses.push({question: questions[question_id].question_text,option:questions[question_id].options[option_id].option_text});
         console.log(responses);

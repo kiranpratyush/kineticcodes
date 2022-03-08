@@ -7019,7 +7019,7 @@ textarea {
   display: block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .botIcon .Messenger_header .Messenger_prompt {
         font-size: 1.25rem;
     }
