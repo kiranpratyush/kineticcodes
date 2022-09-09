@@ -1,0 +1,154 @@
+/* Some codes are duplicated here with the desktop modal Page  */
+/* To do 
+1. refactor code
+2. ELiminate duplicate code
+*/
+
+.ModalPageTablet__container {
+  display: flex;
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+.ModalPage__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(240, 233, 233, 0.492);
+}
+.ModalPageTablet__aside {
+  display: flex;
+  gap: 8px;
+  align-self: flex-start;
+}
+.modalpagesmallimage__container {
+  height: 60px;
+  width: 50px;
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+  position: relative;
+}
+.ModalPageTablet__main {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-right: 10px;
+}
+.ModalPage__main__favorite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #00000074;
+  cursor: pointer;
+}
+.ModalPageTablet__main__image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.ModalPageTablet__main__image {
+  max-height: 600px;
+  min-width: 400px;
+  object-fit: cover;
+  aspect-ratio: 1/1.1;
+}
+
+.ModalPage__details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.ModalPage__header {
+  font-size: 2rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ModalPage__subheader {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: #686565;
+}
+
+.ModalPage__customerreview__container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ModalPage__about {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.underline {
+  position: relative;
+  display: inline-block;
+}
+.underline::after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  width: 50%;
+  background-color: rgba(8, 60, 174, 1);
+  left: 0;
+  bottom: -2px;
+}
+.ModalPageTablet__productdetails {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #686565;
+  margin-bottom: 20px;
+  /* text-align: justify; */
+  word-spacing: 0.1rem;
+}
+
+.ModalPageTablet__categories {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.ModalPage__category__name {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.ModalPage__badgecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ModalPage__badge {
+  background: rgba(8, 60, 174, 1);
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.ModalPage__tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.ModalPags__tags__badge {
+  background-color: #e0e0e0;
+  color: rgb(72, 72, 72);
+  padding: 1px 8px;
+  border-radius: 2px;
+}

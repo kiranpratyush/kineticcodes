@@ -1,0 +1,75 @@
+/* .dark {
+  --color-bg: #121212;
+  --color-font: #fff;
+  --color-gray: #d9d2d2;
+}
+.light {
+  --color-bg: white;
+  --color-font: black;
+  --color-gray: #3e3a3a;
+} */
+.MobileMenu__container {
+  background-color: var(--color-bg);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--color-font);
+  padding: 20px;
+  z-index: 2;
+}
+.MobileMenu__line {
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-font);
+}
+.MobileMenu__header {
+  font-size: 2rem;
+}
+.MobileMenu__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.MobileMenu__categories span {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+  color:var(--color-font)
+}
+.MobileMenu__categories span:hover {
+  background-color: var(--color-font);
+  color: var(--color-bg);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.MobileMenu__header__container {
+  margin-bottom: 28px;
+  position: relative;
+}
+.MobileMenu__icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.onvalue {
+  display: block;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width:550px)  and (max-width:700px){
+  .MobileMenu__container{
+    right:50%;
+  }
+  
+}

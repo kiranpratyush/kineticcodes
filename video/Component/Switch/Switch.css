@@ -1,0 +1,47 @@
+.switch {
+  background-color: var(--color-bg);
+  width: 64px;
+  height: 28px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.switch span {
+  padding-left: 4px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+.switch button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  background-color: var(--color-bg);
+  border-radius: 50%;
+}
+.off {
+  transition: all 0.9s;
+  flex-direction: row-reverse;
+  background-color: var(--color-bg);
+}
+.off button {
+  background-color: var(--color-font);
+}
+.off span {
+  color: var(--color-font);
+}
+.on {
+  transition: all 0.5s;
+  flex-direction: row;
+  background-color: var(--color-bg);
+}
+.on button {
+  background-color: var(--color-font);
+}
+.on span {
+  color: var(--color-font);
+}

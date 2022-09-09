@@ -1,0 +1,20 @@
+.dark {
+  --color-bg: #121212;
+  --color-font: #fff;
+  --color-gray: #d9d2d2;
+  --color-toggle: #121212df;
+  --color-linear: #000000;
+  --color-image: linear-gradient(147deg, #000000d8 0%, #434343e6 74%);
+  --font-weight: 300;
+  /* --color-image: linear-gradient(147deg, #000000ed 0%, #26313bc1 74%); */
+  /* --color-image: linear-gradient(315deg, #221f47a3 0%, #00000087 74%); */
+}
+.light {
+  --color-bg: white;
+  --color-font: black;
+  --color-gray: #3e3a3a;
+  --color-toggle: #2c2b2b;
+  --color-linear: #000000;
+  --color-image: linear-gradient(147deg, #000000d8 0%, #434343b3 74%);
+  --font-weight: 400;
+}

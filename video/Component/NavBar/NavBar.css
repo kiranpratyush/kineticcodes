@@ -1,0 +1,98 @@
+.NavBar__container {
+  /* padding-top: 20px; */
+  /* margin-left: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  background-image: var(--color-image);
+  /* position: fixed; */
+  z-index: 24px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 24;
+  padding: 20px 20px;
+}
+.NavBar__values {
+  display: flex;
+  gap: 20px;
+}
+.NavBar__values button {
+  font-family: inherit;
+  background: none;
+  color: var(--color-font);
+  /* color: #fff; */
+  border: none;
+  cursor: pointer;
+  padding: 10px 0px;
+  font-size: 1.15rem;
+  transition: color 0.3s;
+  position: relative;
+  display: inline-block;
+}
+.NavBar__values button:hover {
+  transition: color 0.5s;
+}
+.NavBar__values button::after {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-font);
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.NavBar__values button:hover::after {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-bg);
+  /* color:var(--color-bg); */
+  height: 1px;
+  width: 100%;
+  animation: height 0.5s;
+}
+/* .tt::after{
+  content: "";
+  display: inline-block;
+  width:10px;
+  height:10px;
+  background-color: blue;
+} */
+/* .active {
+  text-decoration: underline;
+  line-height: 1.5;
+} */
+
+.NavBar__modes {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.NavBar__modes span {
+  color: var(--color-font);
+  /* color: #fff; */
+  font-size: 1.15rem;
+}
+.NavBar__mobile__menu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .NavBar__values {
+    display: none;
+  }
+  .NavBar__mobile__menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+@keyframes height {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

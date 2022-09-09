@@ -1,0 +1,161 @@
+.ModalPage__container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1.5fr;
+  /* width: 100%; */
+  width: 80%;
+  margin: 40px auto;
+  /* margin-left: 40px; */
+  margin-bottom: 90px;
+  column-gap: 40px;
+}
+.ModalPage__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(240, 233, 233, 0.492);
+}
+.ModalPage__aside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  /* align-self: center; */
+  justify-self: center;
+}
+.modalpagesmallimage__container {
+  height: 60px;
+  width: 50px;
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+  position: relative;
+}
+.ModalPage__main {
+  max-height: 800px;
+}
+.ModalPage__main__favorite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #00000074;
+  cursor: pointer;
+}
+.ModalPage__main__image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.ModalPage__main__image {
+  max-height: 700px;
+  /* max-width: 555px; */
+  object-fit: cover;
+  aspect-ratio: 1/1.25;
+}
+
+.ModalPage__details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.ModalPage__header {
+  font-size: 2rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* color: rgb(8, 60, 174); */
+}
+
+.ModalPage__subheader {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: #686565;
+}
+
+.ModalPage__customerreview__container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ModalPage__about {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.underline {
+  position: relative;
+  display: inline-block;
+}
+.underline::after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  width: 50%;
+  background-color: rgba(8, 60, 174, 1);
+  left: 0;
+  bottom: -2px;
+}
+.ModalPage__productdetails {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #686565;
+  margin-bottom: 20px;
+}
+
+.ModalPage__categories {
+  margin-bottom: 20px;
+}
+.ModalPage__category__name {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.ModalPage__badgecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ModalPage__badge {
+  background: rgba(8, 60, 174, 1);
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.ModalPage__tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.ModalPags__tags__badge {
+  background-color: #e0e0e0;
+  color: rgb(72, 72, 72);
+  padding: 1px 8px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 1180px) {
+  .ModalPage__container {
+    width: 100%;
+  }
+  .ModalPage__aside {
+    justify-content: flex-end;
+    max-height: 700px;
+  }
+  .modalpagesmallimage__container {
+    height: 40px;
+    width: 40px;
+  }
+}

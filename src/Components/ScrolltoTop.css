@@ -1,0 +1,12 @@
+.scroll_totop {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 3999;
+}
+@media screen and (min-width: 900px) {
+  .scroll_totop {
+    bottom: 20px;
+  }
+}

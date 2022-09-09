@@ -1,0 +1,131 @@
+.mobilemodal__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  gap: 8px;
+}
+.mobilemodal__images {
+  width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  transition: all 1s;
+}
+.mobilemodal__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.mobilemodal__application {
+  font-size: 1.35rem;
+  color: #676060;
+  margin-bottom: 20px;
+}
+.mobilemodaltool__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.mobilemodal__tools {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.mobilemodaltool__span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.mobilemodal__completion {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.mobilemodal__contents {
+  padding-left: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mobilemodal__subtitle {
+  max-height: 90px;
+  margin-bottom: 20px;
+}
+.mobilemodal__subtitle p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.mobilemodal__readmore {
+  background: none;
+  color: rgb(66, 120, 237);
+  font-size: 0.9rem;
+  border: none;
+}
+.mobilemodal__close {
+  position: fixed;
+  z-index: 1000;
+  right: 10px;
+  top: 10px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  cursor: pointer;
+}
+.mobilemodal__close span {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  transform: translateY(-8px);
+  font-size: 1.5rem;
+}
+.mobilemodal__tags__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.mobilemodal__tags__badge {
+  background-color: #e0e0e0;
+  color: rgb(72, 72, 72);
+  padding: 1px 8px;
+  border-radius: 2px;
+}
+.mobilemodal__badge {
+  background: rgba(8, 60, 174, 1);
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.mobilemodal__ratingContainer {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.mobileModalPage__main__favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* padding-top: 8px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #00000074;
+  cursor: pointer;
+}

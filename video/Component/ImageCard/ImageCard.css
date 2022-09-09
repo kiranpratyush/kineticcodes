@@ -1,0 +1,91 @@
+.ImageCard__container {
+  --margin-left: 300px;
+  --padding-top: 320px;
+  margin-top: 20px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 26px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  margin-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: transform 0.3s;
+}
+.ImageCard__container:hover {
+  box-shadow: 0px 0px 5px var(--color-font);
+  transition: all 0.3s;
+  transform: scale(1.02);
+}
+.ImageCard__image {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ImageCard__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  font-size: 1.65rem;
+  font-weight: 400;
+  gap: 8px;
+  word-spacing: 1px;
+}
+
+.ImageCard__subtitle {
+  color: var(--color-gray);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight);
+}
+.ImageCard__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  top: 10px;
+}
+.ImageCard__header__image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ImageCard__header img {
+  height: 40px;
+  width: 40px;
+}
+.feat {
+  align-self: stretch;
+  grid-row: span 2;
+  gap: 40px;
+}
+.feat img {
+  aspect-ratio: 1/1.5;
+  object-fit: cover;
+  object-position: top left;
+}
+.down {
+  position: relative;
+  top: 16px;
+}
+
+@media screen and (max-width: 640px) {
+  .ImageCard__title {
+    font-size: 1.35rem;
+    font-weight: 400;
+  }
+  .ImageCard__subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .ImageCard__container {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 10px;
+    margin-top: 4px;
+    padding-top: 10px;
+    justify-content: space-between;
+  }
+}

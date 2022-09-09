@@ -1,0 +1,98 @@
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.ProjectDetails__container {
+  position: relative;
+}
+.ProjectDetails__contact {
+  /* background-color: #c2c2c2; */
+  margin-top: 20px;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.ProjectDetails__contact__header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--color-font);
+}
+.ProjectDetails__contact__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ProjectDetails__contact__input input {
+  width: 40%;
+  padding: 14px;
+  font-size: 1.45rem;
+  border: 1px solid rgb(8, 60, 174);
+  outline: none;
+  color: var(--color-font);
+}
+.ProjectDetails__contact__input input:active {
+  border: 1px solid rgb(8, 60, 174);
+}
+.ProjectDetails__contact__input button {
+  padding: 18px;
+  font-size: 1.25rem;
+  border: none;
+  color: #fff;
+  background-color: rgb(8, 60, 174);
+  cursor: pointer;
+}
+.backIcon {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #cecece;
+  cursor: pointer;
+  z-index: 4;
+  /* color:#fff; */
+  background-color: var(--color-bg);
+}
+@media screen and (max-width: 520px) {
+  .backIcon {
+    left: 0;
+    top: 0;
+    background-color: var(--color-bg);
+    border-radius: 2px;
+  }
+  .ProjectDetails__contact__input input {
+    width: 65%;
+    padding: 14px;
+    font-size: 1.45rem;
+    border: 1px solid rgb(8, 60, 174);
+    outline: none;
+  }
+  .ProjectDetails__contact__header {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--color-font);
+  }
+  .ProjectDetails__contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 1080px) {
+  .backIcon {
+    left: 20px;
+    top: -54px;
+    background-color: var(--color-bg);
+    border-radius: 2px;
+  }
+}

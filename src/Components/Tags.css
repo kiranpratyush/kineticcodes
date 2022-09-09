@@ -1,0 +1,24 @@
+.badge2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  background-color: rgb(8, 60, 174);
+  border-radius: 10px;
+  color: #fff;
+  padding: 2px 9px;
+}
+.btn-close2 {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+}
+.TagInnerBadge {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

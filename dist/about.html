@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kinetic Codes</title>
+    <meta name="robots" content="noindex, follow"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ::::::::::::::Favicon icon::::::::::::::-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/vendor/icofont.min.css"/>
+    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @media (min-width: 992px) {
+                .breadcrumb-section {
+                    display: none;
+                }
+            }
+    </style>
+</head>
+
+<body>
+
+<main class="main-wrapper dark-mode">
+    <!-- .....:::::: Start Header Section :::::.... -->
+    <header class="header-section sticky-header d-none d-lg-block section-fluid-200">
+        <div class="header-wrapper">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <!-- Start Header Logo -->
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/images/logo/logo.png" width="270" height=70" alt="" style="height:70px">
+                        </a>
+                        <!-- End Header Logo -->
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <!-- Start Header Menu -->
+                        <ul class="header-nav">
+                            <!-- <li><a href="index.html">Home</a></li> -->
+                            <li class="has-dropdown">
+                                <a href="services/software-development.html">Services</a>
+                                <ul class="submenu">
+                                    <li><a href="services/software-development.html">Software Development</a></li>
+                                    <li><a href="services/mobile-application-development.html">Mobile Application
+                                        Development</a></li>
+                                    <li><a href="services/web-development.html">Web Development</a></li>
+                                    <li><a href="services/web-design.html"> Web design (UI and
+                                        UX)</a></li>
+                                    <li><a href="services/ai-and-machine-learning.html">Artificial intelligence and
+                                        Machine
+                                        learning</a></li>
+                                    <li><a href="services/iot-device-production.html">IOT Devices Production</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="has-dropdown">
+                            <a href="portfolio-list.html">Project</a>
+                            <ul class="submenu">
+                                <li><a href="portfolio-list.html">Project</a></li>
+                                <li><a href="portfolio-details.html">Project Details</a></li>
+                            </ul>
+                        </li> -->
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="video.html">Video</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <!-- <li class="has-dropdown">
+                            <a href="index.html">Pages</a>
+                            <ul class="submenu">
+
+
+                                <li><a href="404-error.html">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="blog-list-left-sidebar.html">Blogs</a>
+                            <ul class="submenu">
+                                <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                                <li><a href="blog-list-full-width.html">Blog List Full Width</a></li>
+                                <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
+                                <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a>
+                                </li>
+                                <li><a href="blog-details-full-width.html">Blog Details Full Width</a></li>
+                            </ul>
+                        </li> -->
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <!-- End Header Menu -->
+                    </div>
+                    <div class="col-auto">
+                        <div class="header-btn-link">
+                            <a href="contact.html" class="btn btn-lg btn-default">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <input type="checkbox" class="checkbox" id="checkbox" />
+                        <label for="checkbox" class="label">
+                          <i class="fas fa-moon"></i>
+                          <i class="fas fa-sun"></i>
+                          <div class="ball"></div>
+                        </label>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- .....:::::: End Header Section :::::.... -->
+
+    <!-- .....:::::: Start Mobile Header Section :::::.... -->
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="mobile-logo">
+                        <a href="index.html"><img src="assets/images/logo/logo.png" width="200" height="50" style="height:50px"
+                                                  alt=""></a>
+                    </div>
+                </div>
+                <div class="col-auto center-toggle">
+                    <div class="mobile-action-link text-end">
+                      <a data-bs-toggle="offcanvas" href="#toggleMenu" role="button"
+                        ><i class="icofont-navigation-menu"></i
+                      ></a>
+                    </div>
+                    <div>
+                      <input type="checkbox" class="checkbox" id="checkbox" />
+                      <label for="checkbox" class="label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                      </label>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- .....:::::: Start MobileHeader Section :::::.... -->
+
+    <!--  .....::::: Start Offcanvas Mobile Menu Section :::::.... -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleMenu">
+        <div class="offcanvas-header">
+            <!-- Start Header Logo -->
+            <a href="index.html" class="header-logo"><img src="assets/images/logo/logo.png" alt="" height="55" style="height:50px"
+                                                          width="200"></a>
+            <!-- End Header Logo -->
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Start Offcanvas Mobile Menu Wrapper -->
+            <div class="offcanvas-mobile-menu-wrapper">
+                <!-- Start Mobile Menu  -->
+                <div class="mobile-menu-bottom">
+                    <!-- Start Mobile Menu Nav -->
+                    <div class="offcanvas-menu">
+                        <ul>
+                            <!-- <li><a href="index.html"><span>Home</span></a></li> -->
+                            <li>
+                                <a href="#"><span>Services</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="services/software-development.html">Software Development</a></li>
+                                    <li><a href="services/mobile-application-development.html">Mobile Application
+                                        Development</a></li>
+                                    <li><a href="services/web-development.html">Web Development</a></li>
+                                    <li><a href="services/mobile-application-development.html"> Web design (UI and
+                                        UX)</a></li>
+                                    <li><a href="services/ai-and-machine-learning.html">Artificial intelligence and
+                                        Machine
+                                        learning</a></li>
+                                    <li><a href="services/iot-device-production.html">IOT Devices Production</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li>
+                            <a href="#"><span>Portfolio</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="portfolio-list.html">Portfolio</a></li>
+                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                            </ul>
+                        </li> -->
+                            <li><a href="about.html"><span>About Us</span></a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li>
+                                <a href="#" class="header-links">Video</a>
+                                <ul class="mobile-sub-menu">
+                                  <li>
+                                    <a href="video.html" class="header-links">Home</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="header-links">Web design</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="header-links">Web Development</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="header-links">
+                                      Web design (UI and UX)
+                                    </a>
+                                  </li>
+                                  <!-- <li>
+                                    <a href="#" class="header-links"
+                                      >Artificial intelligence and Machine learning</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="#" class="header-links"
+                                      >IOT Devices Production</a
+                                    >
+                                  </li> -->
+                                </ul>
+                              </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <!-- <li>
+                            <a href="#"><span>Pages</span></a>
+                            <ul class="mobile-sub-menu">
+
+                                <li><a href="404-error.html">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Blogs</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                                <li><a href="blog-list-full-width.html">Blog List Full Width</a></li>
+                                <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
+                                <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a>
+                                </li>
+                                <li><a href="blog-details-full-width.html">Blog Details Full Width</a></li>
+                            </ul>
+                        </li> -->
+                            <li>
+                                <a href="contact.html"><span>Contact</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div> <!-- End Mobile Menu Nav -->
+                </div> <!-- End Mobile Menu -->
+
+                <!-- Start Mobile contact Info -->
+                <div class="mobile-contact-info text-center">
+                    <ul class="social-link">
+                      <li>
+                        <a href="https://www.linkedin.com/company/kinetic-codes"
+                          ><i class="icofont-linkedin"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://example.com"
+                          ><i class="icofont-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://example.com"
+                          ><i class="icofont-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- End Mobile contact Info -->
+
+            </div> <!-- End Offcanvas Mobile Menu Wrapper -->
+        </div>
+    </div>
+    <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
+
+    <!-- Offcanvas Overlay -->
+    <div class="offcanvas-overlay"></div>
+
+    <!-- ...::: Start Breadcrumb Section :::... -->
+       <div class="breadcrumb-section">
+           <div class="box-wrapper">
+               <div class="breadcrumb-wrapper" style="max-height: 89px; padding-top:0; padding-bottom: 30px; background: none;">
+                    
+               </div>
+           </div>
+       </div>
+    <!-- ...::: End Breadcrumb Section :::... -->
+
+    <!-- ...::: Start Content Display Section :::... -->
+    <div class="content-display-section section-top-gap-150">
+        <div class="box-wrapper custom-box-wrapper about-box-wrapper pos-relative">
+            
+                <div class="content-inner-img content-inner-img-left hero-image">
+                    <img class="img-fluid" src="assets/images/section-image/section-image-1.png" alt="">
+                </div>
+            
+            <div class="section-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 pos-relative">
+                            <div
+                                    class="custom-section-content px-3 custom-section-content-about custom-section-content-right">
+                                <div class="section-content section-content-gap-50 ">
+                                    <!--class="section-title"-->
+                                    <h2 class="section-title">We Stand True To Our Motto - <span>Evolving Businesses</span></h2>
+                                </div>
+                                <p>Our end-to-end services in app development include business analysis, UI/UX design, application testing and deployment. For us at KineticCodes, each client is as important as the previous one and as the next one is going to be. We understand that every business is a baby to the one who birthed it, and we make sure that it gets nurtured with love and dedication.</p>
+                                <p><strong>We build and design softwares, web applications, blockchain applications, or anything that is needed to kickstart your online business. From ideation to it’s implementation, we stick with you through the whole process.  
+</strong></p>
+                                <ul class="default-iconic-item-2">
+                                    <li>
+                                        <div class="icon"><i class="icofont-check"></i></div>
+                                        <div class="content">
+                                            <h4 class="smalltitle">Mission & Vision</h4>
+                                            <p>We dream, architect, design and develop. But more than that, we are a team of passionate people driven by one relentless pursuit to craft innovative solutions and deliver unparalleled results.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><i class="icofont-check"></i></div>
+                                        <div class="content">
+                                            <h4 class="smalltitle">Values and Ethics</h4>
+                                            <p>Just like we said, each and every client is equally important to us and we stick with them through the whole process so their brainchild suffers no lags and delays. We strive not to be a success, but rather to be of value.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="btn btn-lg btn-default icon-right">Get Started <i
+                                        class="icofont-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: End Content Display Section :::... -->
+
+    <!-- ...::: Start Count Display Section :::... -->
+    <div class="count-display section-fluid-200 section-top-gap-150 section-inner-padding-100 section-inner-bg">
+        <div class="box-wrapper">
+            <div class="count-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="counter-items counter-items-style-2">
+                                <!-- Start Counter Single Items  -->
+                                <li class="counter-single-item">
+                                    <div class="count-box">
+                                        <img src="assets/images/icons/count-shape-blue.png" alt="">
+                                        <p class="text"><span class="counter">94</span>+</p>
+                                    </div>
+                                    <h6 class="title">Happy Client’s</h6>
+                                </li>
+                                <!-- End Counter Single Items  -->
+                                <!-- Start Counter Single Items  -->
+                                <li class="counter-single-item">
+                                    <div class="count-box">
+                                        <img src="assets/images/icons/count-shape-orange.png" alt="">
+                                        <p class="text">$<span class="counter">140</span>K+</p>
+                                    </div>
+                                    <h6 class="title">Revenue Generated</h6>
+                                </li>
+                                <!-- End Counter Single Items  -->
+                                <!-- Start Counter Single Items  -->
+                                <li class="counter-single-item">
+                                    <div class="count-box">
+                                        <img src="assets/images/icons/count-shape-purple.png" alt="">
+                                        <p class="text"><span class="counter">214</span>+</p>
+                                    </div>
+                                    <h6 class="title">Projects Done</h6>
+                                </li>
+                                <!-- End Counter Single Items  -->
+                                <!-- Start Counter Single Items  -->
+                                <li class="counter-single-item">
+                                    <div class="count-box">
+                                        <img src="assets/images/icons/count-shape-pink.png" alt="">
+                                        <p class="text"><span class="counter">65</span>+</p>
+                                    </div>
+                                    <h6 class="title">Team Member's</h6>
+                                </li>
+                                <!-- End Counter Single Items  -->
+                                <!-- Start Counter Single Items  -->
+                                <li class="counter-single-item">
+                                    <div class="count-box">
+                                        <img src="assets/images/icons/count-shape-yellow.png" alt="">
+                                        <p class="text"><span class="counter">87</span>%</p>
+                                    </div>
+                                    <h6 class="title">Business Growth</h6>
+                                </li>
+                                <!-- End Counter Single Items  -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: End Count Display Section :::... -->
+
+    <!-- ...::: Start Team Display Section :::... -->
+    <!-- <div class="team-display section-top-gap-150">
+    <div class="box-wrapper">
+        <div class="section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3">
+                        <div class="section-content section-content-gap-80 text-center">
+                            <h6 class="section-tag tag-orange">Team Member</h6>
+                            <h3 class="section-title">Meet our awesome &
+                                dedicated team member’s</h3>
+                            <span class="icon-seperator"><img src="assets/images/icons/section-seperator-shape.png"
+                                                              alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"> -->
+    <!-- Start Team SLider -->
+    <!-- <div class="team-slider default-slider"> -->
+    <!-- Slider main container -->
+    <!-- <div class="swiper-container"> -->
+    <!-- Additional required wrapper -->
+    <!-- <div class="swiper-wrapper"> -->
+    <!-- Slides -->
+    <!-- Start Team Single Items -->
+    <!-- <div class="team-single-item swiper-slide">
+                                        <div class="top">
+                                            <div class="image img-responsive">
+                                                <img src="assets/images/team/team-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="name">Simone Rhoades</h4>
+                                                <span class="profession">Marketing Manager</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="content">
+                                                <h4 class="name">Simone Rhoades</h4>
+                                                <span class="profession">Marketing Manager</span>
+                                            </div>
+                                            <ul class="social-link">
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-facebook"></i></a></li>
+                                                <li><a href="https://example.com"><i class="icofont-skype"></i></a>
+                                                </li>
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-dribbble"></i></a></li>
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-behance"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+    <!-- End Team Single Items -->
+    <!-- Start Team Single Items -->
+    <!-- <div class="team-single-item swiper-slide">
+                                        <div class="top">
+                                            <div class="image img-responsive">
+                                                <img src="assets/images/team/team-img-2.jpg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="name">Marline Patino</h4>
+                                                <span class="profession">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="content">
+                                                <h4 class="name">Marline Patino</h4>
+                                                <span class="profession">UI/UX Designer</span>
+                                            </div>
+                                            <ul class="social-link">
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-facebook"></i></a></li>
+                                                <li><a href="https://example.com"><i class="icofont-skype"></i></a>
+                                                </li>
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-dribbble"></i></a></li>
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-behance"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+    <!-- End Team Single Items -->
+    <!-- Start Team Single Items -->
+    <!-- <div class="team-single-item swiper-slide">
+                                        <div class="top">
+                                            <div class="image img-responsive">
+                                                <img src="assets/images/team/team-img-3.jpg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="name">Rosanne Theriau</h4>
+                                                <span class="profession">Web Developer</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="content">
+                                                <h4 class="name">Rosanne Theriau</h4>
+                                                <span class="profession">Web Developer</span>
+                                            </div>
+                                            <ul class="social-link">
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-facebook"></i></a></li>
+                                                <li><a href="https://example.com"><i class="icofont-skype"></i></a>
+                                                </li>
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-dribbble"></i></a></li>
+                                                <li><a href="https://example.com"><i
+                                                        class="icofont-behance"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+    <!-- End Team Single Items -->
+    <!-- </div>
+                            </div> -->
+    <!-- Navigation buttons -->
+    <!-- <div class="default-slider-buttons">
+                                <div class="slider-button button-prev"><i class="icofont-long-arrow-left"></i></div>
+                                <div class="slider-button button-next"><i class="icofont-long-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div> -->
+    <!-- End Team SLider -->
+    <!-- <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-lg btn-default-outline btn-section-bottom icon-right">Join Now
+                                <i class="icofont-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <!-- ...::: End Team Display Section :::... -->
+    <div class="service-details-section section-top-gap-150">
+        <div class="box-wrapper">
+            <div class="service-details-wrapper">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+
+                        <div class="default-content-hero-image  col-sm-12 col-lg-5 d-flex justify-content-center align-items-center mb-20">
+                            <img class="img-fluid" src="/assets/images/service/service-details-hero-img.jpg"
+                                 alt="">
+                        </div>
+                        <div class=" col-sm-12 col-lg-6">
+
+                            <h2 class="subtitle">About us</h2>
+
+                            <p>We are a team of high-qualified full-stack developers specializing in web and mobile
+                                applications. Our goal is to offer end-to-end solutions in complete correspondence with
+                                our clients needs and requirements, providing a full-cycle development of any
+                                complexity from scratch including long-run maintenance and support.
+                            </p>
+
+                            <p><strong>We understand that for “Big”, “Large-Scale” projects it is always beneficial to
+                                work with
+                                professionals, But what about the “Small-Scale” projects?</strong></p>
+
+                            <p>We have a solution: Rather than working and hiring 3-4 different developers for
+                                your project, get in touch with us to get a team of developers at the best prices
+                                and the best experience.</p>
+
+
+                            <p><strong>Work with hand-picked tech talent having experience of working with companies,
+                                from
+                                around the world and time-zones.</strong></p>
+
+                            <p>Our teams can design, build, ship and scale your idea and make it a reality in the most
+                                efficient way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- ...::: Start Company Logo Display Section :::... -->
+    <div class="company-logo-display-section section-fluid-135 company-logo-border">
+        <div class="box-wrapper">
+            <div class="company-logo-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Start Company Logo Slider -->
+                            <div class="company-logo-slider">
+                                <!-- Slider main container -->
+                                <div class="swiper-container">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <!-- Start Company Logo Single Item -->
+                                        <div class="company-logo-single-item swiper-slide">
+                                            <a href="" class="image">
+                                                <img class="img-thumbnail"
+                                                     src="assets/images/company-logo/company-logo-1.png" alt=""></a>
+                                        </div>
+                                        <!-- End Company Logo Single Item -->
+                                        <!-- Start Company Logo Single Item -->
+                                        <div class="company-logo-single-item swiper-slide">
+                                            <a href="" class="image"><img class="img-thumbnail"
+                                                                          src="assets/images/company-logo/company-logo-2.png"
+                                                                          alt=""></a>
+                                        </div>
+                                        <!-- End Company Logo Single Item -->
+                                        <!-- Start Company Logo Single Item -->
+                                        <div class="company-logo-single-item swiper-slide">
+                                            <a href="" class="image"><img class="img-thumbnail"
+                                                                          src="assets/images/company-logo/company-logo-3.png"
+                                                                          alt=""></a>
+                                        </div>
+                                        <!-- End Company Logo Single Item -->
+                                        <!-- Start Company Logo Single Item -->
+                                        <div class="company-logo-single-item swiper-slide">
+                                            <a href="" class="image"><img class="img-thumbnail"
+                                                                          src="assets/images/company-logo/company-logo-4.png"
+                                                                          alt=""></a>
+                                        </div>
+                                        <!-- End Company Logo Single Item -->
+                                        <!-- Start Company Logo Single Item -->
+                                        <div class="company-logo-single-item swiper-slide">
+                                            <a href="" class="image"><img
+                                                    src="assets/images/company-logo/company-logo-5.jpg" alt=""></a>
+                                        </div>
+                                        <!-- End Company Logo Single Item -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Company Logo Slider -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: End Company Logo Display Section :::... -->
+
+    <!-- ...::: Start Testimonial Display Section :::... -->
+    <div class="testimonial-display-section section-top-gap-150">
+        <div class="box-wrapper">
+            <div class="section-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-2">
+                            <div class="section-content section-content-gap-80 text-center">
+                                <h6 class="section-tag tag-blue">Client Feedback</h6>
+                                <h3 class="section-title">This is some of Kinetic Codes's honorable
+                                    customer feedback.</h3>
+                                <span class="icon-seperator"><img
+                                        src="assets/images/icons/section-seperator-shape.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Start Testimonial Slider - Content -->
+                            <div class="testimonial-content-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!-- Start Testimonial Single Content Item-->
+                                        <div class="testimonial-single-content-item swiper-slide">
+                                            <p>Great experience and highly professional. They understand your project
+                                                and goes the extra mile to get it done. They also don't give up but make
+                                                sure that you will end up satisfied!</p>
+                                            <ul class="review-star">
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Testimonial Single Content Item -->
+                                        <!-- Start Testimonial Single Content Item-->
+                                        <div class="testimonial-single-content-item swiper-slide">
+                                            <p>Kinetic Codes has delivered good work on the development project and we enjoyed working with them. Their communication was top-notch, they met all deadlines, and their skills were reasonably strong. We enjoyed working with Kinetic Codes and will have additional jobs for them in the future</p>
+                                            <ul class="review-star">
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Testimonial Single Content Item -->
+                                        <!-- Start Testimonial Single Content Item-->
+                                        <div class="testimonial-single-content-item swiper-slide">
+                                            <p>Kinetic Codes was brought in to help us figure out issues we were having with a custom filter developed. They were put in a position to help solve a problem caused by another developer but worked through the issue well and we put in place a good fix. We'll certainly contact them again in the future.</p>
+                                            <ul class="review-star">
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                                <li class="fill"><i class="icofont-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Testimonial Single Content Item -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Testimonial Slider - Content -->
+                            <!-- Start Testimonial Slider - Thumbnail -->
+                            <div class="testimonial-thumb-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!-- Start Testimonial Single Thumb Item -->
+                                        <div class="testimonilal-single-thumb-item swiper-slide">
+                                            <div class="image text-center" >
+                                                <img class="img-thumbnail" src="assets/images/company-logo/company-logo-5.jpg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="name">Pharmause</h4>
+<!--                                                <p><span class="profession">Founder</span><span-->
+<!--                                                        class="company-name">Pixelz Studio</span></p>-->
+                                            </div>
+                                        </div>
+                                        <!-- End Testimonial Single Thumb Item-->
+                                        <!-- Start Testimonial Single Thumb Item -->
+                                        <div class="testimonilal-single-thumb-item swiper-slide">
+                                            <div class="image">
+                                                <img class="img-thumbnail" src="assets/images/company-logo/company-logo-1.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="name">Showoff</h4>
+<!--                                                <p><span class="profession">Founder</span><span-->
+<!--                                                        class="company-name">Pixelz Studio</span></p>-->
+                                            </div>
+                                        </div>
+                                        <!-- End Testimonial Single Thumb Item-->
+                                        <!-- Start Testimonial Single Thumb Item -->
+                                        <div class="testimonilal-single-thumb-item swiper-slide">
+                                            <div class="image">
+                                                <img  class="img-thumbnail" src="assets/images/company-logo/company-logo-4.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="name">ASC</h4>
+<!--                                                <p><span class="profession">Founder</span><span-->
+<!--                                                        class="company-name">Pixelz Studio</span></p>-->
+                                            </div>
+                                        </div>
+                                        <!-- End Testimonial Single Thumb Item-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ENd Testimonial Slider - Thumbnail -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Testimonial Display Section :::... -->
+    </div>
+    <!-- ...::: End Testimonial Display Section :::... -->
+
+    <!-- ...::: Start Footer Section :::... -->
+    <footer class="footer-section section-top-gap-150">
+        <div class="box-wrapper">
+            <!-- Start Footer Top -->
+            <div class="footer-top footer-top-style-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-top-box">
+                                <div class="footer-top-left">
+                                    <!-- Start Footer Single Widget - About -->
+                                    <div class="footer-single-widget footer-about">
+                                        <a href="index.html" class="footer-logo">
+                                            <img src="assets/images/logo/logo-dark.png" width="250" height="60"
+                                                 alt="">
+                                        </a>
+                                        <!--<p>Lets unite for future to harness the power of coding to turn your business
+                                            ideas into reality and that is how Kinetic Codes emerged.</p> -->
+                                        <div>
+                                            <a class="footer-box-info-text-single" href="tel:+0123456789"><span
+                                                    class="icon"><i class="icofont-phone"></i></span>
+                                                <p>+(91) 8840 633 587</p>
+                                            </a>
+                                            <a class="footer-box-info-text-single"
+                                               href="mailto:demo@example.com"><span class="icon"><i
+                                                    class="icofont-envelope-open"></i></span>
+                                                <p>info@kineticcodes.com</p>
+                                            </a>
+                                            <address class="footer-box-info-text-single"><span class="icon"><i
+                                                    class="icofont-location-pin"></i></span>
+                                                <p>T/4 Nehru Nagar Meerapur<br/>
+                                                    Prayagraj, Uttar Pradesh<br/>
+                                                    India, 211003</p>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <!-- End Footer Single Widget - About-->
+                                </div>
+                                <div class="footer-top-right" style="margin-left: 30px;">
+                                    <!-- Start Footer Single Widget - Footer Menu -->
+                                    <div class="footer-single-widget footer-menu">
+                                        <h5 class="footer-title">Company</h5>
+                                        <ul class="footer-nav">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <!-- <li><a href="">Print Ads</a></li> -->
+                                            <li><a href="faq.html">FAQ’s</a></li>
+                                            <!-- <li><a href="">Careers</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <!-- End Footer Single Widget - Footer Menu-->
+                                    <!-- Start Footer Single Widget - Footer Menu -->
+                                    <div class="footer-single-widget footer-menu">
+                                        <h5 class="footer-title">Quick Links</h5>
+                                        <ul class="footer-nav">
+                                            <li><a href="./assets/pdf/PrivacyPolicy.pdf">Privacy Policy</a></li>
+                                            <!-- <li><a href="">Discussion</a></li> -->
+                                            <li><a href="./assets/pdf/T&C.pdf">Terms & Conditions</a></li>
+                                            <li><a href="/contact.html"> Customer Support</a></li>
+                                            <!-- <li><a href="">Course FAQ’s</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <!-- End Footer Single Widget - Footer Menu-->
+                                    <!-- Start Footer Single Widget - Footer Menu -->
+                                    <!-- <div class="footer-single-widget footer-menu">
+                                    <h5 class="footer-title">Product</h5>
+                                    <ul class="footer-nav">
+                                        <li><a href="">Presentation</a></li>
+                                        <li><a href="">E-Books</a></li>
+                                        <li><a href="">Management Tool</a></li>
+                                        <li><a href="">Dashboard</a></li>
+                                        <li><a href="">Event Organizer</a></li>
+                                    </ul>
+                                </div> -->
+                                    <!-- End Footer Single Widget - Footer Menu-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Top -->
+
+            <!-- Start Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-between align-items-center">
+                        <div class="col-auto">
+                            <p class="copytight-text">  &copy; KineticCodes Technologies Private Limited| All
+                    copyrights reserved.</p>
+                        </div>
+
+                        <div class="col-auto">
+                            <ul class="footer-bottom-link">
+                                <li><a href="./assets/pdf/T&C.pdf">Terms of Service </a></li>
+                                <li><a href="./assets/pdf/PrivacyPolicy.pdf">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Bottom -->
+        </div>
+    </footer>
+    <!-- ...::: End Footer Section :::... -->
+
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
+</main>
+
+<!-- ::::::::::::::All JS Files here :::::::::::::: -->
+<!-- Global Vendor -->
+<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/jquery-ui.min.js"></script>
+
+<!--Plugins JS-->
+<script src="assets/js/plugins/swiper-bundle.min.js"></script>
+<script src="assets/js/plugins/jquery.waypoints.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/images-loaded.min.js"></script>
+<script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+<script src="assets/js/plugins/ajax-mail.js"></script>
+<script src="assets/js/plugins/material-scrolltop.js"></script>
+
+<!--Main JS (Common Activation Codes)-->
+<script src="assets/js/main.js"></script>
+<!-- Dark mode script -->
+<script src="assets/js/modeToggle.js"></script>
+
+</body>
+
+</html>
